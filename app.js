@@ -7,6 +7,7 @@ const connectDB = require('./static/db/connect'); // Corrected require statement
 require('dotenv').config();
 
 app.use(express.json());
+app.use(express.static('./public/public'))
 // app.get('/', (req, res) => {
 //   res.sendFile(path.resolve('pages/index.html'));
 // });
